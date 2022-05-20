@@ -1,21 +1,55 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 
-    <html>
+<html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="rps.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock Paper Scissors!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="rps.css">
+    <script src="rps.js" async defer></script>
+</head>
 
-    <body>
-        <script src="rps.js" async defer></script>
-        <header>
+<body>
+    <header>
+        <div>
+            <h1>Rock Paper Scissors!</h1>
+        </div>
+    </header>
 
-        </header>
-    </body>
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">computer</div>
 
-    </html>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Choose: Rock, Paper, Scissors.</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="./img/rock.png">
+        </div>
+        <div class="choice" id="p">
+            <img src="./img/paper.png">
+        </div>
+        <div class="choice" id="s">
+            <img src="./img/scissors.png">
+        </div>
+    </div>
+    <div id="action">
+        <p>Make your move!</p>
+    </div>
+    <div class="restart">
+      <button id="playagain">Restart</button>
+    </div>
+    <footer>
+        <strong>Copyright 2022 &copy;, The Odin Project.</strong>
+    </footer>
+
+</body>
+
+</html>
